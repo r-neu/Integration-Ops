@@ -1,0 +1,14 @@
+{
+  "preparedAt": "2026-07-28",
+  "quality": {
+    "salesforceCc0Records": 180,
+    "totalRecords": 180,
+    "resolvedContactAccountLinks": 12,
+    "resolvedSpaceMarketLinks": 132,
+    "resolvedReservationContactLinks": 2,
+    "normalizedPhones": 23,
+    "contactsMissingReservationStatus": 6,
+    "leadsMissingIndustry": 3,
+    "leadsMissingTitle": 2
+  }
+}

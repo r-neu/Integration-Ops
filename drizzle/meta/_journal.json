@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1785303584779,
+      "tag": "0000_majestic_phantom_reporter",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1785313126292,
+      "tag": "0001_puzzling_talos",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1785772800000,
+      "tag": "0002_fleet_recovery_control",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1785859200000,
+      "tag": "0003_exposure_decision_log",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1785945600000,
+      "tag": "0004_exposure_decision_revisions",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1786032000000,
+      "tag": "0005_recovery_governance",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1786122000000,
+      "tag": "0006_containment_remediation",
+      "breakpoints": true
+    }
+  ]
+}
