@@ -56,7 +56,7 @@ Each visitor gets a separate demo run stored in Cloudflare D1, Cloudflare's serv
 
 A few implementation details worth looking at:
 
-- D1-stored incident, job, and customer update state
+- D1 stores incident, job, and customer update state
 - linked retry attempts with idempotency keys
 - quarantine records for selective replay
 - connector rollout by cohort with health gates and rollback
