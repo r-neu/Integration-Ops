@@ -1,6 +1,6 @@
 # Integration Ops
 
-Integration Ops is a working portfolio project for recovering failed customer integrations.
+Integration Ops is a portfolio project for recovering failed customer integrations.
 
 A lot of integration demos stop at the setup flow: connect Salesforce, map a few fields, and send data somewhere else. I wanted to look at the messier part after launch: an integration is already live, something breaks, and the team has to recover without making the problem bigger.
 
