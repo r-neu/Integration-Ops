@@ -32,15 +32,11 @@ The demo includes five failure paths:
 
 ## Why I Built This
 
-I built this because integration failures are rarely just technical errors. They usually create an ownership problem.
+I built this because integration failures are rarely just technical errors. They create a coordination problem.
 
-A support person needs to know what to tell the customer, but should not be editing CRM data or pushing connector changes. A customer admin can approve source data or reconnect an app, but should not operate the SaaS provider's retry workers. An engineer needs traces, mapping versions, and rollout controls before changing shared connector behavior.
+Support needs enough context to answer the customer. A customer admin may need to approve source data or reconnect an app. Engineering needs traces, mapping versions, and rollout controls before changing shared connector behavior.
 
-The product question I kept coming back to was:
-
-> How do you recover safely without asking the wrong person to fix it, or retrying data just because a button exists?
-
-That is why I did not build a workflow builder. I built an incident workspace for integrations that are already live.
+I treated recovery as a shared incident view instead of a generic retry flow. The demo is organized around what happened, what can be done next, and which parts of the fix are customer-facing, data-facing, or connector-facing.
 
 ## Demo Flow
 
