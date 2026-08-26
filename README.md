@@ -52,12 +52,11 @@ The guided walkthrough is useful for reviewing the whole system quickly. The rol
 
 ## How It Works
 
-Each visitor gets a separate demo run stored in Cloudflare D1. Actions update real state for that run, so the demo can move through validation, retry, monitoring, release, rollback, and customer communication without sharing state across visitors.
+Each visitor gets a separate demo run stored in Cloudflare D1, Cloudflare's serverless SQL database. Actions update real state for that run, so the demo can move through validation, retry, monitoring, release, rollback, and customer communication without sharing state across visitors.
 
 A few implementation details worth looking at:
 
-- Each visitor gets a separate demo run stored in D1, Cloudflare's serverless SQL database.
-- D1-backed incident, job, and customer update state
+- D1-stored incident, job, and customer update state
 - linked retry attempts with idempotency keys
 - quarantine records for selective replay
 - connector rollout by cohort with health gates and rollback
