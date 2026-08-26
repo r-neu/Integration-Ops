@@ -15,7 +15,7 @@ Start at `/access`.
 You can open the demo from three roles:
 
 - **Support admin** sees customer impact and sends updates.
-- **Customer admin** handles the parts only the customer can approve, like CRM data and app access.
+- **Customer admin** handles customer-owned steps, like CRM data approval and app reconnection.
 - **Integration engineer** fixes mapping or connector issues and controls rollout.
 
 There is also a guided walkthrough if you want to review the full incident from one place.
@@ -56,7 +56,7 @@ Each visitor gets a separate demo run stored in Cloudflare D1. Actions update re
 
 A few implementation details worth looking at:
 
-- server-issued demo sessions and role-scoped workspace snapshots
+- Each visitor gets a separate demo run stored in D1, Cloudflare's serverless SQL database.
 - D1-backed incident, job, and customer update state
 - linked retry attempts with idempotency keys
 - quarantine records for selective replay
@@ -81,7 +81,7 @@ More detail is in `data/SOURCES.md`.
 
 ## Tech Stack
 
-React, TypeScript, Tailwind CSS, Vinext, Cloudflare Workers, Cloudflare D1, Drizzle, and Node tests.
+React, TypeScript, Tailwind CSS, Vinext, Cloudflare Workers for the serverless backend, D1 for SQL storage, Drizzle, and Node tests.
 
 ## Run Locally
 
